@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <link rel="stylesheet" href="./css/bootstrap.css">
+   <link rel="stylesheet" href="./css/styles.css">
+   <link rel="stylesheet" href="./css/hero.css">
+   <link rel="stylesheet" href="./css/agency.css">
+   <link rel="stylesheet" href="./css/service.css">
+   <link rel="stylesheet" href="./css/process.css">
+   <link rel="stylesheet" href="./css/tariffs.css">
+   <link rel="stylesheet" href="./css/grid.css">
+   <script src="./js/index.js"></script>
+   <title>Document</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+
+         <div class="wrap__nav-mobile">
+            <div class="header__nav-mobile">
+               <ul class="header__nav-list-mobile">
+                  <li class="nav__item-mobile">
+                     <a href="#" class="nav__link-mobile lang scroll-to" key="about">О Нас</a>
+                  </li>
+                  <li class="nav__item-mobile">
+                     <a href="#" class="nav__link-mobile lang scroll-to" key="services">Услуги</a>
+                  </li>
+                  <li class="nav__item-mobile">
+                     <a href="#" class="nav__link-mobile lang scroll-to" key="process">Процесс</a>
+                  </li>
+                  <li class="nav__item-mobile">
+                     <a href="#" class="nav__link-mobile lang scroll-to" key="review">Отзывы</a>
+                  </li>
+                  <li class="nav__item-mobile">
+                     <a href="#" class="nav__link-mobile lang scroll-to" key="team">Команда</a>
+                  </li>
+                  <li class="nav__item-mobile">
+                     <a href="#" class="nav__link-mobile lang scroll-to" key="tariff">Тарифы</a>
+                  </li>
+               </ul>
+         </div>
+         </div>
+
+         <div class="row align-items-center">
+            <div class="col-2 text-end">
+               <a href="/" class="header__link">
+                  <img src="./images/logo.svg" alt="Logo" class="header__logo">
+               </a>
+            </div>
+
+            <div class="col-10 d-sm-flex d-md-none ">
+               <div class="burger">
+                  <svg class="svg-burger toggle" data-burger width="30" height="27" viewBox="0 0 30 27" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+   
+                     <line class="line-hor" x1="0" y1="1.5" x2="30" y2="1.5" stroke-width="3" stroke="#000" />
+                     <line class="line-hor" x1="0" y1="13.5" x2="30" y2="13.5" stroke-width="3" stroke="#000" />
+                     <line class="line-hor" x1="0" y1="25.5" x2="30" y2="25.5" stroke-width="3" stroke="#000" />
+                  </svg>
+   
+                  <svg class="svg-cross toggle" data-burger width="30" height="27" viewBox="0 0 30 27" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <line class="line-rotate" x1="0" x2="30" y1="0" y2="27" stroke-width="3" stroke="#fff" />
+                     <line class="line-rotate" x1="0" x2="30" y1="27" y2="0" stroke-width="3" stroke="#fff" />
+                  </svg>
+               </div>
+            </div>
+
+            <div class="col-6 header__nav">
+               <ul class="header__nav-list d-flex justify-content-center">
+                  <li class="nav__item">
+                     <a href="#" class="nav__link lang scroll-to" key="about">О Нас</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#" class="nav__link lang scroll-to" key="services">Услуги</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#" class="nav__link lang scroll-to" key="process">Процесс</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#" class="nav__link lang scroll-to" key="review">Отзывы</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#" class="nav__link lang scroll-to" key="team">Команда</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#" class="nav__link lang scroll-to" key="tariff">Тарифы</a>
+                  </li>
+               </ul>
+            </div>
+
+            
+
+            <div class="col-2 header__phone text-end">
+               <a href="tel:+48 512 846 224" class="header__link-phone">+48 512 846 224</a>
+            </div>
+            <div class="col-2 d-md-flex d-sm-none justify-content-end header__dropdown">
+               <div class="dropdown">
+                  <span class="drop__btn-top"></span>
+                  <button class="dropbtn"><span class="lng__desc">RU</span><span class="arrow__down-dropdown"></span></button>
+                  <div id="myDropdown" class="dropdown-content">
+                     <a id="en" class="translate pointer">EN</a>
+                     <a id="ru" class="translate pointer">RU</a>
+                     <a id="pl" class="translate pointer">PL</a>
+                     <a id="ua" class="translate pointer">UA</a>
+                  </div>
+               </div>
+            </div>
+
+            
+
+         </div>
+      </header>
+
+      <section class="hero">
+         <div class="row align-items-center">
+            <div class="col-12 col-md-5 ">
+               <div class="hero__content">
+                  <div class="hero__bage">
+                     <img src="./images/hero-bage.svg" alt="">
+                     <h2 class="hero__title">
+                        подбор<br>
+                        недвижимости<br> 
+                        в польше
+                     </h2>
+                  </div>
+                  <p class="hero__offer">
+                     Мы подберем индивидуальный вариант жилой или инвестиционной недвижимости.
+                  </p>
+                  <div class="hero__btn">
+                     <button class="hero__btn-consultation">
+                        <img src="./images/btn-herosvg.svg" alt="">
+                     </button>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-12 col-md-7 order-2 order-md-1">
+               <div class="hero__img">
+                  <img src="./images/Component-hero.jpg" alt="HERO IMAGE">
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="agency">
+         <div class="agency__bg d-none d-md-flex flex-column justify-content-between">
+
+            <div class="row  pt-2">
+               <div class="col-1"></div>
+               <div class="col-5">
+                  <h3 class="agency__title">
+                     Altra Real Estate Agency
+                  </h3>
+               </div>
+            </div>
+            <div class="row mt-5">
+               <div class="col-1"></div>
+               <div class="col-4">
+                  <p class="agency__text">
+                     Больше чем просто агентство недвижимости
+                  </p>
+               </div>
+            </div>
+            <div class="row mt-4 pt-4">
+               <div class="d-flex flex-column justufy-content-end">
+                  <div class="agency__container">
+                     <div class="agency__content">
+                        <img src="./images/cards.svg" alt="">
+
+                        <div class="agency__layout">
+                           <div class="agency__flex">
+                              <div class="agency__item">
+                                 <div class="agency__inner">
+                                    <h3 class="agency__inner-title">
+                                       Економия
+                                    </h3>
+                                    <p class="agency__inner-text">
+                                       ⁃ Мы поможем найти недвижимость по рыночной цене или ниже.<br>
+                                       ⁃ Всегда пытаемся максимально снизить цену покупки.<br>
+                                       ⁃ Мы сотрудничаем с юристами и нотариусами, архитекторами, поэтому проверка всех документов, оценка стоимости ремонта и т.д. входит в стоимость.<br>
+                                       - Мы сэкономим до 80% Вашего времени по подбору недвижимости.
+                                    </p>
+                                 </div>
+                              </div>
+
+                              <div class="agency__item">
+                                 <div class="agency__inner">
+                                    <h3 class="agency__inner-title">
+                                       Безопасность
+                                    </h3>
+                                    <p class="agency__inner-text">
+                                       ⁃ Анализируем информацию о переходе прав собственности.<br>
+                                       ⁃ Проверяем в кадастровой системе есть ли залог или ипотека на квартиру.<br>
+                                       - Проверяем кооператив в котором находится недвижимость.<br>
+                                       ⁃ Проверяем нужно ли разрешение от МВД Польши.  <br>
+                                       ⁃ Проверяем земельный участок, на котором расположена недвижимость.  <br>
+                                       ⁃ Проверка юридической чистоты объекта. 
+                                    </p>
+                                 </div>
+                              </div>
+
+                              <div class="agency__item">
+                                 <div class="agency__inner">
+                                    <h3 class="agency__inner-title">
+                                       Технологии
+                                    </h3>
+                                    <p class="agency__inner-text">
+                                       ⁃ Мы поможем найти недвижимость по рыночной цене или ниже.<br>
+                                       ⁃ Всегда пытаемся максимально снизить цену покупки. <br>
+                                       ⁃ Мы сотрудничаем с юристами и нотариусами, архитекторами, поэтому проверка всех документов, оценка стоимости ремонта и т.д. входит в стоимость. <br>
+                                       - Мы сэкономим до 80% Вашего времени по подбору недвижимости.
+                                    </p>
+                                 </div>
+                              </div>
+
+                           </div>
+                        </div>
+
+                     </div>
+                     
+                  </div>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="agency__bg-768 d-flex d-md-none flex-column">
+            <h3 class="agency__title text-center pt-2">
+               Altra Real Estate Agency
+            </h3>
+            <p class="agency__text text-center mt-5">
+               Больше чем просто агентство недвижимости
+            </p>
+            <div class="row">
+               <div class="d-flex justify-content-center">
+                  <div class="agency__content-column col-11">
+                     <img src="./images/bg-768-red.svg" class="w-100" alt="">
+                     <div class="agency__content-column-absolute">
+                        <div class="flex-column">
+                           <div class="flex-column__item">
+                              <div class="flex-column__body">
+                                 <h3 class="flex-column__title">Економия</h3>
+                                 <p class="flex-column__text">
+                                    ⁃ Мы поможем найти недвижимость по рыночной цене или ниже.<br>
+                                    ⁃ Всегда пытаемся максимально снизить цену покупки. <br> 
+                                    ⁃ Мы сотрудничаем с юристами и нотариусами, архитекторами, поэтому проверка всех документов, оценка стоимости ремонта и т.д. входит в стоимость.<br>
+                                    - Мы сэкономим до 80% Вашего времени по подбору недвижимости.
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="flex-column__item">
+                              <div class="flex-column__body flex-column__body-border">
+                                 <h3 class="flex-column__title">Безопасность</h3>
+                                 <p class="flex-column__text">
+                                    ⁃ Анализируем информацию о переходе прав собственности.<br>
+                                    ⁃ Проверяем в кадастровой системе есть ли залог или ипотека на квартиру.<br>
+                                    - Проверяем кооператив в котором находится недвижимость.<br>
+                                    ⁃ Проверяем нужно ли разрешение от МВД Польши.  <br>
+                                    ⁃ Проверяем земельный участок, на котором расположена недвижимость.  <br>
+                                    ⁃ Проверка юридической чистоты объекта. 
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="flex-column__item">
+                              <div class="flex-column__body">
+                                 <h3 class="flex-column__title">Технологии</h3>
+                                 <p class="flex-column__text">
+                                    ⁃ Мы поможем найти недвижимость по рыночной цене или ниже.<br>
+                                    ⁃ Всегда пытаемся максимально снизить цену покупки. <br>
+                                    ⁃ Мы сотрудничаем с юристами и нотариусами, архитекторами, поэтому проверка всех документов, оценка стоимости ремонта и т.д. входит в стоимость. <br>
+                                    - Мы сэкономим до 80% Вашего времени по подбору недвижимости.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+         <div class="agency__bottom d-flex justify-content-end">
+            <div class="agency__bottom-svg">
+               <img src="./images/red-figure-bottom-agency.svg" alt="">
+            </div>
+         </div>
+
+       
+      </section>
+
+      <section class="service">
+         <div class="row">
+            <div class="service__svg col-12 col-md-10">
+               <div class="service__svg-layout">
+                  <h2 class="service__title">
+                     Услуги нашего агентства
+                  </h2>
+               </div>
+               <img src="./images/service-black-red.svg" class="w-100" alt="">
+            </div>
+         </div>
+
+         <div class="service__row service__row-reverse ">
+            <div class="service__col service__col-white">
+               <div class="service__inner">
+                  <h2 class="service__item-title color-black">
+                     Поиск / сдача жилья в аренду
+                  </h2>
+                  <p class="service__item-text color-black">
+                     Наше агентство берет на себя все сложности по поиску/ сдачи квартиры и заключению договора аренды. Мы поможем найти  быстро и безопасно.
+                  </p>
+                  <div class="d-flex">
+                     <div class="service__btn ">
+                        <img src="./images/btn-170.svg" class="w-100" alt="Button">
+                        <div class="service__btn-layout">Подобрать</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="service__col service__col-white">
+               <!-- <img src="./images/service-middle.jpg" class="w-100" alt="IMAGE"> -->
+               <img src="./images/service-top.jpg" class="w-100" alt="IMAGE">
+
+            </div>
+         </div>
+
+         <div class="service__row ">
+            <div class="service__col service__col-black">
+               <div class="service__col-absolute">
+                  <img src="./images/Vector-7.svg" class=" w-100" alt="">
+               </div>
+               <div class="service__inner">
+                  <h2 class="service__item-title color-white">
+                     Поиск и покупка
+                     / продажа недвижимости
+                  </h2>
+                  <p class="service__item-text color-white">
+                     Если вы хотите купить/ продать недвижимость, мы быстро и безопасно найдем объект, проверим и подготовим все необходимые документы и проконтролируем весь процесс сделки. Также после сделки поможем с регистрацией в налоговой, подписании протокола приема-передачи и заключение договора на доставку электричества.
+                  </p>
+                  <div class="d-flex justify-content-end">
+                     <div class="service__btn ">
+                        <img src="./images/btn-170.svg" class="w-100 service__btn-reverse" alt="Button">
+                        <div class="service__btn-layout">Подобрать</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="service__col service__col-black">
+               <div class="service__col-absolute-h-726">
+                  <img src="./images/Component-15.svg" class="w-100" alt="Vector">
+               </div>
+               <div class="service__col-absolute-h-40">
+                  <img src="./images/Vector-19.svg" class="w-100" alt="Vector">
+               </div>
+               <img src="./images/Rectangle-6.png" class="w-100" alt="IMAGE">
+
+            </div>
+         </div>
+
+         <div class="service__row service__row-reverse ">
+            <div class="service__col service__col-white">
+               <div class="service__inner">
+                  <h2 class="service__item-title color-black">
+                     Управление недвижимостью
+                  </h2>
+                  <p class="service__item-text color-black">
+                     Данная услуга идеальна для людей, которые предпочитают стабильно получать доход с недвижимости, не инвестируя свое время.
+                  </p>
+                  <div class="d-flex">
+                     <div class="service__btn ">
+                        <img src="./images/btn-170.svg" class="w-100" alt="Button">
+                        <div class="service__btn-layout">Подобрать</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="service__col service__col-white">
+               <!-- <img src="./images/service-middle.jpg" class="w-100" alt="IMAGE"> -->
+               <img src="./images/service-3.jpg" class="w-100" alt="IMAGE">
+
+            </div>
+         </div>
+
+         <div class="service__row ">
+            
+            <div class="service__col service__col-black">
+               <div class="service__col-absolute">
+                  <img src="./images/Vector-7.svg" class=" w-100" alt="">
+               </div>
+               <!-- <div class="service__col-absolute-1420">
+                  <img src="./images/Vector-7.svg" class=" w-100" alt="">
+               </div> -->
+               <div class="service__inner">
+                  <h2 class="service__item-title color-white">
+                     Инвестиции в недвижимость
+                  </h2>
+                  <p class="service__item-text color-white">
+                     Вы можете сохранить и приумножить свой капитал, инвестируя в недвижимость. Мы предоставляем услуги от покупки недвижимости на моменте строительства, до поиска и подбора объектов недвижимости с большим потенциалом, которые можно купить и выгодно перепродать с годовым ROI до 30%.
+                  </p>
+                  <div class="d-flex justify-content-end">
+                     <div class="service__btn ">
+                        <img src="./images/btn-170.svg" class="w-100 service__btn-reverse" alt="Button">
+                        <div class="service__btn-layout">Подобрать</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="service__col service__col-black">
+               <div class="service__col-absolute-h-110">
+                  <img src="./images/Group-107.svg" class="w-100" alt="Vector">
+               </div>
+               <!-- <img src="./images/service-middle.jpg" class="w-100" alt="IMAGE"> -->
+               <img src="./images/service-4.png" class="w-100" alt="IMAGE">
+
+            </div>
+         </div>
+
+         <div class="service__row service__row-reverse ">
+            <div class="service__col service__col-white">
+               <div class="service__inner">
+                  <h2 class="service__item-title color-black">
+                     Аренда и покупка коммерческих помещений
+                  </h2>
+                  <p class="service__item-text color-black">
+                     Поможем найти лучший вариант локации для успешного ведения Вашего бизнеса.
+                  </p>
+                  <div class="d-flex">
+                     <div class="service__btn ">
+                        <img src="./images/btn-170.svg" class="w-100" alt="Button">
+                        <div class="service__btn-layout">Подобрать</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="service__col service__col-white">
+               <!-- <img src="./images/service-middle.jpg" class="w-100" alt="IMAGE"> -->
+               <img src="./images/service-5.jpg" class="w-100" alt="IMAGE">
+
+            </div>
+         </div>
+
+         <div class="service__row-end">
+            <div class="service__row-end-layout">
+               <img src="./images/Group-54.svg" class="w-100" alt="">
+            </div>
+            <img src="./images/service-end.svg" class="w-100" alt="">
+         </div>
+      </section>
+
+      <section class="process">
+
+         <div class="process__row process__row-relative">
+            <div class="process__item" data-digital="1">
+               <img src="./images/process/red-big.svg" class="process__figure" alt="">
+               <div class="process__item-absolute">
+                  <img src="./images/process/black-min.svg"  alt="">
+               </div>
+               <div class="process__digital">1</div>
+               <div class="process__inner">
+                  <div class="process__text">
+                     <h2 class="process__title">
+                        Консультация (бесплатно)
+                     </h2>
+                     <p class="process__para">
+                        Предоставляем полную информацию. Объясняем, какие варианты более привлекательны, на что нужно обратить внимание. Информируем по стоимости недвижимости и устанавливаем суму вознаграждения наших услуг.
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="process__item">
+               <img src="./images/process/black-max.svg"  alt="">
+               <div class="process__item-absolute-vector">
+                  <img src="./images/process/vector.svg" alt="">
+               </div>
+               <div class="process__inner">
+                  <div class="process__text">
+                     <h2 class="process__title">
+                        Процесс
+                     </h2>
+                  </div>
+               </div>
+            </div>
+
+            <div class="process__item" data-digital="2">
+               <img src="./images/process/red-big.svg" class="process__figure" alt="">
+               <div class="process__item-absolute">
+                  <img src="./images/process/black-min.svg"  alt="">
+               </div>
+               <div class="process__digital">2</div>
+               <div class="process__inner">
+                  <div class="process__text">
+                     <h2 class="process__title">
+                        Подбор вариантов
+                     </h2>
+                     <p class="process__para">
+                        Подбираем квартиры и созваниваемся с хозяевами. Во время звонка уточняем все пожелания своего клиента и договариваемся о просмотре в удобное для клиента время.
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="process__item process__item-reverse">
+               <img src="./images/process/red-big.svg" class="process__figure" alt="">
+               <div class="process__item-absolute process__item-absolute-reverse">
+                  <img src="./images/process/black-min.svg"  alt="">
+               </div>
+               <div class="process__inner process__inner-reverse">
+                  <div class="process__text">
+                     <h2 class="process__title">
+                        Работа с договором
+                     </h2>
+                     <p class="process__para">
+                        Предоставляем договор, если его нет. Проверяем договор, который предоставила другая сторона.
+                     </p>
+                  </div>
+               </div>
+               <div class="process__digital process__digital-reverse">4</div>
+            </div>
+
+            <div class="process__item" data-digital="3">
+               <img src="./images/process/red-big.svg" class="process__figure" alt="">
+               <div class="process__item-absolute">
+                  <img src="./images/process/black-min.svg"  alt="">
+               </div>
+               <div class="process__inner">
+                  <div class="process__text">
+                     <h2 class="process__title">
+                        Просмотр вариантов в живую / удаленно
+                     </h2>
+                     <p class="process__para">
+                        Выезжаем на просмотр квартиры вместе с клиентом, выбираем подходящий вариант, уточняем детали. Можем провести онлайн-трансляцию объекта, а также готовы дополнительно организовать подробную фото/ видео съемку выбранного варианта недвижимости.
+                     </p>
+                  </div>
+               </div>
+               <div class="process__digital">3</div>
+            </div>
+
+            <div class="process__item process__item-reverse" data-digital="5">
+               <img src="./images/process/red-big.svg" class="process__figure" alt="">
+               <div class="process__item-absolute process__item-absolute-reverse">
+                  <img src="./images/process/black-min.svg"  alt="">
+               </div>
+               <div class="process__inner process__inner-reverse">
+                  <div class="process__text">
+                     <h2 class="process__title">
+                        Подписание договора
+                     </h2>
+                     <p class="process__para">
+                        Проверяем юридическую чистоту и безопасность сделки.
+                     </p>
+                  </div>
+               </div>
+               <div class="process__digital process__digital-reverse">5</div>
+            </div>
+         </div>
+
+      </section>
+   
+      <section class="tariffs">
+
+         <div class="tariffs__row">
+            <div class="tariffs__item">
+               <img src="./images/tariffs/black-max.svg" alt="Figure">
+               <div class="tariffs__item-absolute">   
+                  <h2 class="tariffs__title-main">Тарифы</h2>
+               </div>
+               <div class="tariffs__item-vector">
+                  <img src="./images/tariffs/Vector-top-left.svg" alt="">
+               </div>
+            </div>
+         </div>
+
+         <div class="tariffs__row-relative">
+            <div class="tariffs__item-figure">
+               <img src="./images/tariffs/red-leftsvg.svg" alt="Figure">
+               <div class="tariffs__item-absolute">
+                  <div class="tariffs__inner">
+                     
+                        <h2 class="tariffs__title">
+                           Аренда (квартир, домов,<br>
+                           коммерции)
+                        </h2>
+                        <p class="tariffs__text">
+                           <strong>– 100%</strong> Брутто одноразово.<br>
+                           Задаток при первом показе 1000 злотых.
+                        </p>
+                     
+                  </div>
+               </div>
+               <div class="tariffs__svg">
+                  <img src="./images/tariffs/black-min.svg" alt="">
+               </div>
+               <span class="tariffs__percent">100%</span>
+            </div>
+
+            <div class="tariffs__row-absolute">
+               <div class="tariffs__item-figure-reverse">
+                  <img src="./images/tariffs/red-right.svg" alt="">
+                  <div class="tariffs__item-absolute">
+                     <div class="tariffs__inner">
+                        
+                           <h2 class="tariffs__title">
+                              Управление <br>
+                              недвижимостью 
+                           </h2>
+                           <p class="tariffs__text">
+                              <strong>– 100%</strong> Брутто одноразово.<br>
+                              <strong>– и 10%</strong> в течение 11 месяцев от  дохода по квартире. 
+                           </p>
+                        
+                     </div>
+                  </div>
+                  <div class="tariffs__svg-reverse">
+                     <img src="./images/tariffs/black-min.svg" alt="">
+                  </div>
+                  <div class="tariffs__vector-reverse">
+                     <img src="./images/tariffs/Vector-top-right.svg" alt="">
+                  </div>
+                  <span class="tariffs__percent">10%</span>
+               </div>
+            </div>
+         </div>
+
+         <div class="tariffs__row-relative">
+            <div class="tariffs__item-figure">
+               <img src="./images/tariffs/red-leftsvg.svg" alt="Figure">
+               <div class="tariffs__item-absolute">
+                  <div class="tariffs__inner">
+                     
+                        <h2 class="tariffs__title">
+                           Покупка и продажа<br> 
+                           недвижимости
+                        </h2>
+                        <p class="tariffs__text">
+                          <strong> – 3%</strong> брутто от конечной цены недвижимости.
+                        </p>
+                     
+                  </div>
+                  <span class="tariffs__percent">3%</span>
+               </div>
+               <div class="tariffs__svg hidden">
+                  <img src="./images/tariffs/black-min.svg" alt="">
+               </div>
+            </div>
+            <div class="tariffs__row-absolute">
+               <div class="tariffs__item-figure-reverse">
+                  <img src="./images/tariffs/red-right.svg" alt="">
+                  <div class="tariffs__item-absolute">
+                     <div class="tariffs__inner">
+                        
+                           <h2 class="tariffs__title">
+                              Инвестиции <br>
+                              в недвижимость
+                           </h2>
+                           <p class="tariffs__text">
+                             <strong> – Индивидуально.</strong> 
+                           </p>
+                        
+                     </div>
+                  </div>
+                  <div class="tariffs__svg-reverse">
+                     <img src="./images/tariffs/black-min.svg" alt="">
+                  </div>
+                  <span class="tariffs__percent">%</span>
+               </div>
+            </div>
+         </div>
+
+         <div class="tariffs__row-relative hidden">
+            <div class="tariffs__item-figure">
+               <img src="./images/tariffs/red-leftsvg.svg" alt="Figure">
+               <div class="tariffs__item-absolute">
+                  <div class="tariffs__inner">
+                  
+                     <h2 class="tariffs__title">
+                        Управление <br>
+                        недвижимостью
+                     </h2>
+                     <p class="tariffs__text">
+                        <strong>– 100%</strong> Брутто одноразово.<br>
+                        <strong>– и 10%</strong> в течение 11 месяцев от дохода по квартире.
+                     </p>
+                  
+                  </div>
+               </div>
+               <div class="tariffs__svg hidden">
+                  <img src="./images/tariffs/black-min.svg" alt="">
+               </div>
+            </div>
+         </div>
+
+         <div class="tariffs__row-relative hidden">
+            <div class="tariffs__item-figure">
+               <img src="./images/tariffs/red-leftsvg.svg" alt="Figure">
+               <div class="tariffs__item-absolute">
+                  <div class="tariffs__inner">
+                  
+                     <h2 class="tariffs__title">
+                        Инвестиции <br>
+                        в недвижимость
+                     </h2>
+                     <p class="tariffs__text">
+                        <strong> – Индивидуально.</strong>
+                     </p>
+                  
+                  </div>
+               </div>
+               <div class="tariffs__svg bottom">
+                  <img src="./images/tariffs/black-min.svg" alt="">
+               </div>
+            </div>
+         </div>
+
+      </section>
+</body>
+</html>

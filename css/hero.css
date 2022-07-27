@@ -1,0 +1,70 @@
+.hero {
+}
+.hero__img {
+   display: flex;
+   width: 100%;
+}
+.hero__img img{
+   width: 100%;
+   object-fit: cover;
+}
+.hero__content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.hero__bage {
+   display: flex;
+   width: 100%;
+   margin-bottom: 32px;
+   position: relative;
+}
+.hero__title {
+   position: absolute;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 4.5rem;
+   line-height: 122%;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   /* border: 1px solid #000000; */
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   width: 498.71px;
+   height: 176.74px;
+   top: 40%;
+   left: 15%;
+}
+.hero__bage img{
+   width: 100%;
+   object-fit: cover;
+}
+.hero__offer {
+   max-width: 540px;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 300;
+   font-size: 19px;
+   line-height: 158%;
+   color: #000000;
+   /* padding-left: 139px; */
+}
+.hero__btn{
+   text-align: left;
+}
+.hero__btn-consultation {
+   display: flex;
+   max-width: 390px;
+   border:none;
+   outline: none;
+   background-color: transparent;
+}
+.hero__btn-consultation img{
+   width: 100%;
+   object-fit: cover;
+}
+@media(max-width:768px){
+   .hero__img{
+      padding-top: 30px;
+   }
+}

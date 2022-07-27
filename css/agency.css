@@ -1,0 +1,136 @@
+.agency{
+   margin-bottom: 71px;
+}
+.agency__bg {
+   width: 100%;
+   background-image: url(../images/agency-bg.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+.agency__bg-black{
+   position: absolute;
+   width: 100%;
+   min-height: 30rem;
+   background-color: #000;
+   bottom: 0;
+   left: 0;
+}
+.agency__title {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 4.2rem;
+   line-height: 122%;
+   text-transform: capitalize;
+   color: #FFFFFF;
+}
+.agency__text {
+   font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-size: 1.9rem;
+line-height: 158%;
+color: #FFFFFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.agency__container {
+   width: 83%;
+   margin: 0 auto;
+}
+.agency__content {
+   position: relative;
+}
+.agency__content img{
+   width: 100%;
+   object-fit: cover;
+}
+.agency__layout {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+}
+.agency__flex {
+   display: flex;
+}
+.agency__item {
+   /* max-width: 400px; */
+   width: 33.3333%;
+   padding: 3.5%;
+}
+.agency__inner-title {
+   font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 3rem;
+line-height: 122%;
+color: #FFFFFF;
+}
+.agency__inner-text {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 300;
+   font-size: 1.9rem;
+   line-height: 127%;
+   color: #FFFFFF;
+}
+.agency__bottom-svg{
+   width: 96%;
+   position: relative;
+   margin-top: -2px;
+   z-index: -1;
+}
+.agency__bottom-svg  img{
+   width: 100%;
+   object-fit: cover;
+}
+.agency__bg-768{
+   width: 100%;
+   /* min-height: 984px; */
+   background-image: url(../images/bg-768.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top;
+}
+.agency__content-column {
+   position: relative;
+}
+.agency__content-column-absolute {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+}
+.flex-column__item {
+   height: 33.3333%;
+   margin-top: 10%;
+   padding: 0 2rem;
+}
+.flex-column__body {
+   padding: 10%;
+}
+.flex-column__body-border{
+   border-top: 1px solid #fff;
+   border-bottom: 1px solid #fff;
+}
+.flex-column__title {
+   font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 3rem;
+line-height: 158%;
+color: #FFFFFF;
+}
+.flex-column__text {
+   font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-size: 1.9rem;
+line-height: 200%;
+color: #FFFFFF;
+}
+
