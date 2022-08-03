@@ -4,10 +4,13 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
    <link rel="stylesheet" href="./css/bootstrap.css">
    <link rel="stylesheet" href="./css/styles.css">
    <link rel="stylesheet" href="./css/hero.css">
@@ -15,8 +18,13 @@
    <link rel="stylesheet" href="./css/service.css">
    <link rel="stylesheet" href="./css/process.css">
    <link rel="stylesheet" href="./css/tariffs.css">
+   <link rel="stylesheet" href="./css/review.css">
+   <link rel="stylesheet" href="./css/feedback.css">
+   <link rel="stylesheet" href="./css/footer.css">
    <link rel="stylesheet" href="./css/grid.css">
-   <script src="./js/index.js"></script>
+   
+   <script src="./js/index.js" defer></script>
+   
    <title>Document</title>
 </head>
 <body>
@@ -43,6 +51,18 @@
                   </li>
                   <li class="nav__item-mobile">
                      <a href="#" class="nav__link-mobile lang scroll-to" key="tariff">Тарифы</a>
+                  </li>
+                  <li>
+                     <div class="dropdown-mobile" data-name="dropdown">
+                        <span class="drop__btn-top-mobile"></span>
+                        <button class="dropbtn-mobile"><span class="lng__desc-mobile">RU</span><span class="arrow__down-dropdown-mobile"></span></button>
+                        <div data-id="myDropdown" class="dropdown-content-mobile">
+                           <a id="en" class="translate pointer">EN</a>
+                           <a id="ru" class="translate pointer">RU</a>
+                           <a id="pl" class="translate pointer">PL</a>
+                           <a id="ua" class="translate pointer">UA</a>
+                        </div>
+                     </div>
                   </li>
                </ul>
          </div>
@@ -102,10 +122,10 @@
                <a href="tel:+48 512 846 224" class="header__link-phone">+48 512 846 224</a>
             </div>
             <div class="col-2 d-md-flex d-sm-none justify-content-end header__dropdown">
-               <div class="dropdown">
+               <div class="dropdown" data-name="dropdown">
                   <span class="drop__btn-top"></span>
                   <button class="dropbtn"><span class="lng__desc">RU</span><span class="arrow__down-dropdown"></span></button>
-                  <div id="myDropdown" class="dropdown-content">
+                  <div data-id="myDropdown" class="dropdown-content">
                      <a id="en" class="translate pointer">EN</a>
                      <a id="ru" class="translate pointer">RU</a>
                      <a id="pl" class="translate pointer">PL</a>
@@ -120,31 +140,50 @@
       </header>
 
       <section class="hero">
-         <div class="row align-items-center">
-            <div class="col-12 col-md-5 ">
-               <div class="hero__content">
-                  <div class="hero__bage">
-                     <img src="./images/hero-bage.svg" alt="">
-                     <h2 class="hero__title">
-                        подбор<br>
-                        недвижимости<br> 
-                        в польше
-                     </h2>
-                  </div>
-                  <p class="hero__offer">
-                     Мы подберем индивидуальный вариант жилой или инвестиционной недвижимости.
-                  </p>
-                  <div class="hero__btn">
-                     <button class="hero__btn-consultation">
-                        <img src="./images/btn-herosvg.svg" alt="">
-                     </button>
-                  </div>
+         <div class="hero__row">
+            <div class="hero__images">
+               <img src="./images/hero/wasaw.png" class="w-100" alt="IMAGE Warsaw city">
+               <div class="hero__images-figure-max">
+                  <img src="./images/hero/Vector-3.svg" class="w-100" alt="IMAGE Vector">
+               </div>
+               <div class="hero__images-figure-min">
+                  <img src="./images/hero/Vector-59.svg" class="w-100" alt="IMAGE Vector">
+               </div>
+               <div class="hero__images-figure-vector">
+                  <img src="./images/hero/Vector-9.svg" class="w-100" alt="">
                </div>
             </div>
 
-            <div class="col-12 col-md-7 order-2 order-md-1">
-               <div class="hero__img">
-                  <img src="./images/Component-hero.jpg" alt="HERO IMAGE">
+            <div class="hero__row-absolute">
+               <div class="hero__content">
+                  <div class="hero__bage">
+                     <img src="./images/hero/Vector-1.svg" class="max-figure" alt="BAGE">
+                     <div class="hero__bage-absolute">
+                        <h2 class="hero__title">
+                           подбор недвижимости 
+                           в польше
+                        </h2>
+                     </div>
+                     <div class="hero__bage-figure">
+                        <img src="./images/hero/Vector-4.svg" class="min-figure" alt="Vector">
+                     </div>
+                     <div class="hero__bage-vector">
+                        <img src="./images/hero/Vector-5.svg" class="vector" alt="">
+                     </div>
+                  </div>
+                  <div class="hero__content-inner">
+                     <p class="hero__content-para">
+                        Мы подберем индивидуальный вариант жилой или инвестиционной недвижимости.
+                     </p>
+                     <div class="hero__content-button">
+                        <button class="hero__button">
+                           <img src="./images/hero/btn-max.svg" class="w-100" alt="IMAGE Button">
+                           <div class="hero__button-absolute">
+                              <span>Консультация (бесплатно)</span>
+                           </div>
+                        </button>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
@@ -580,7 +619,7 @@
          </div>
 
          <div class="tariffs__row-relative">
-            <div class="tariffs__item-figure">
+            <div class="tariffs__item-figure" data-visible>
                <img src="./images/tariffs/red-leftsvg.svg" alt="Figure">
                <div class="tariffs__item-absolute">
                   <div class="tariffs__inner">
@@ -599,12 +638,12 @@
                <div class="tariffs__svg">
                   <img src="./images/tariffs/black-min.svg" alt="">
                </div>
-               <span class="tariffs__percent">100%</span>
+               <span class="tariffs__percent percent-100">100%</span>
             </div>
 
             <div class="tariffs__row-absolute">
-               <div class="tariffs__item-figure-reverse">
-                  <img src="./images/tariffs/red-right.svg" alt="">
+               <div class="tariffs__item-figure-reverse" data-hidden>
+                  <img src="./images/tariffs/vector-right-black-max.svg" alt="">
                   <div class="tariffs__item-absolute">
                      <div class="tariffs__inner">
                         
@@ -620,18 +659,90 @@
                      </div>
                   </div>
                   <div class="tariffs__svg-reverse">
-                     <img src="./images/tariffs/black-min.svg" alt="">
+                     <img src="./images/tariffs/vector-red-min.svg" alt="">
                   </div>
                   <div class="tariffs__vector-reverse">
                      <img src="./images/tariffs/Vector-top-right.svg" alt="">
                   </div>
+                  <span class="tariffs__percent tariffs-percent-color-white percent-10">10%</span>
+               </div>
+            </div>
+         </div>
+
+         <div class="tariffs__row-relative hidden">
+            <div class="tariffs__item-figure" data-visible="">
+               <img src="./images/tariffs/red-leftsvg.svg" alt="Figure">
+               <div class="tariffs__item-absolute">
+                  <div class="tariffs__inner">
+                  
+                     <h2 class="tariffs__title">
+                        Управление <br>
+                        недвижимостью
+                     </h2>
+                     <p class="tariffs__text">
+                        <strong>– 100%</strong> Брутто одноразово.<br>
+                        <strong>– и 10%</strong> в течение 11 месяцев от дохода по квартире.
+                     </p>
+                  
+                  </div>
                   <span class="tariffs__percent">10%</span>
+               </div>
+               <div class="tariffs__svg hidden">
+                  <img src="./images/tariffs/black-min.svg" alt="">
                </div>
             </div>
          </div>
 
          <div class="tariffs__row-relative">
-            <div class="tariffs__item-figure">
+            <div class="tariffs__item-figure" data-hidden="">
+               <img src="./images/tariffs/vector-left-black-max.svg" alt="Figure">
+               <div class="tariffs__item-absolute">
+                  <div class="tariffs__inner">
+                     
+                        <h2 class="tariffs__title">
+                           Покупка и продажа<br> 
+                           недвижимости
+                        </h2>
+                        <p class="tariffs__text">
+                          <strong> – 3%</strong> брутто от конечной цены недвижимости.
+                        </p>
+                     
+                  </div>
+                  <span class="tariffs__percent tariffs-percent-color-white percent-3">3%</span>
+               </div>
+               <div class="tariffs__svg hidden">
+                  <img src="./images/tariffs/vector-red-min.svg" alt="">
+               </div>
+            </div>
+
+
+
+            <div class="tariffs__row-absolute">
+               <div class="tariffs__item-figure-reverse" data-hidden="">
+                  <img src="./images/tariffs/red-right.svg" alt="">
+                  <div class="tariffs__item-absolute">
+                     <div class="tariffs__inner">
+                        
+                           <h2 class="tariffs__title">
+                              Инвестиции <br>
+                              в недвижимость
+                           </h2>
+                           <p class="tariffs__text">
+                             <strong> – Индивидуально.</strong> 
+                           </p>
+                        
+                     </div>
+                  </div>
+                  <div class="tariffs__svg-reverse">
+                     <img src="./images/tariffs/black-min.svg" alt="">
+                  </div>
+                  <span class="tariffs__percent percent-0">%</span>
+               </div>
+            </div>
+         </div>
+
+         <div class="tariffs__row-relative hidden">
+            <div class="tariffs__item-figure" data-visible="">
                <img src="./images/tariffs/red-leftsvg.svg" alt="Figure">
                <div class="tariffs__item-absolute">
                   <div class="tariffs__inner">
@@ -645,12 +756,15 @@
                         </p>
                      
                   </div>
-                  <span class="tariffs__percent">3%</span>
+                  <span class="tariffs__percent  percent-3">3%</span>
                </div>
                <div class="tariffs__svg hidden">
-                  <img src="./images/tariffs/black-min.svg" alt="">
+                  <img src="./images/tariffs/vector-red-min.svg" alt="">
                </div>
             </div>
+
+
+
             <div class="tariffs__row-absolute">
                <div class="tariffs__item-figure-reverse">
                   <img src="./images/tariffs/red-right.svg" alt="">
@@ -670,33 +784,11 @@
                   <div class="tariffs__svg-reverse">
                      <img src="./images/tariffs/black-min.svg" alt="">
                   </div>
-                  <span class="tariffs__percent">%</span>
+                  <span class="tariffs__percent percent-0">%</span>
                </div>
             </div>
          </div>
-
-         <div class="tariffs__row-relative hidden">
-            <div class="tariffs__item-figure">
-               <img src="./images/tariffs/red-leftsvg.svg" alt="Figure">
-               <div class="tariffs__item-absolute">
-                  <div class="tariffs__inner">
-                  
-                     <h2 class="tariffs__title">
-                        Управление <br>
-                        недвижимостью
-                     </h2>
-                     <p class="tariffs__text">
-                        <strong>– 100%</strong> Брутто одноразово.<br>
-                        <strong>– и 10%</strong> в течение 11 месяцев от дохода по квартире.
-                     </p>
-                  
-                  </div>
-               </div>
-               <div class="tariffs__svg hidden">
-                  <img src="./images/tariffs/black-min.svg" alt="">
-               </div>
-            </div>
-         </div>
+         
 
          <div class="tariffs__row-relative hidden">
             <div class="tariffs__item-figure">
@@ -713,6 +805,7 @@
                      </p>
                   
                   </div>
+                  <span class="tariffs__percent">%</span>
                </div>
                <div class="tariffs__svg bottom">
                   <img src="./images/tariffs/black-min.svg" alt="">
@@ -721,5 +814,351 @@
          </div>
 
       </section>
+
+      <section class="review" >
+         
+         <div class="review__header">
+            <div class="review__figure-vector">
+               <img src="./images/reviews/vector-top.svg" class="w-100" alt="VECTOR">
+            </div>
+            <div class="review__figure">
+               <h2 class="review__title">Отзывы</h2>
+            </div>
+         </div>
+         
+         <div class="review__bg">
+            <div class="swiper r-swiper">
+           
+               <div class="swiper-wrapper r-swiper-wrapper">
+                
+                  <div class="swiper-slide r-swiper-slide" style="background-color: #fff;">
+                     <div class="slide__row" style="display: flex;align-items: center;">
+                        <img src="./images/reviews/img1.svg" class="w-95" alt="">
+                        <span style="font-weight: 700;
+                           font-size: 2.5rem;
+                           line-height: 120%;
+                           color: #000000;
+                           margin-left: 5%;"> 
+                           Андрей Балконский
+                        </span>
+                     </div>
+                     <div class="slide__row" style="font-weight: 300;
+                        font-size: 1.9rem;
+                        line-height: 158%;
+                        color: #000000;
+                        margin-bottom: 7.4rem;">
+                        Выражаем огромную благодарность Олегу Кириллову за четкую работу, огромное спасибо за профессионализм, за доброе отношение и понимание наших возможностей и предпочтений. Желаем дальнейших успехов, побольше удачных сделок, процветания, здоровья!
+                     </div>
+                     <div class="slide__row" style="display: flex; justify-content: end;
+                        font-weight: 300;
+                        font-size: 1.6rem;
+                        line-height: 122%;
+                        color: #000000;">
+                        20.03.2022
+                     </div>
+                    </div>
+
+                 <div class="swiper-slide r-swiper-slide" style="background-color: #fff;">
+                  <div class="slide__row" style="display: flex;align-items: center;">
+                     <img src="./images/reviews/img1.svg" class="w-95" alt="">
+                     <span style="font-weight: 700;
+                        font-size: 2.5rem;
+                        line-height: 120%;
+                        color: #000000;
+                        margin-left: 5%;"> 
+                        Андрей Балконский
+                     </span>
+                  </div>
+                  <div class="slide__row" style="font-weight: 300;
+                     font-size: 1.9rem;
+                     line-height: 158%;
+                     color: #000000;
+                     margin-bottom: 7.4rem;">
+                     Выражаем огромную благодарность Олегу Кириллову за четкую работу, огромное спасибо за профессионализм, за доброе отношение и понимание наших возможностей и предпочтений. Желаем дальнейших успехов, побольше удачных сделок, процветания, здоровья!
+                  </div>
+                  <div class="slide__row" style="display: flex; justify-content: end;
+                     font-weight: 300;
+                     font-size: 1.6rem;
+                     line-height: 122%;
+                     color: #000000;">
+                     20.03.2022
+                  </div>
+                 </div>
+
+                 <div class="swiper-slide r-swiper-slide" style="background-color: #fff;">
+                  <div class="slide__row" style="display: flex;align-items: center;">
+                     <img src="./images/reviews/img1.svg" class="w-95" alt="">
+                     <span style="font-weight: 700;
+                        font-size: 2.5rem;
+                        line-height: 120%;
+                        color: #000000;
+                        margin-left: 5%;"> 
+                        Андрей Балконский
+                     </span>
+                  </div>
+                  <div class="slide__row" style="font-weight: 300;
+                     font-size: 1.9rem;
+                     line-height: 158%;
+                     color: #000000;
+                     margin-bottom: 7.4rem;">
+                     Выражаем огромную благодарность Олегу Кириллову за четкую работу, огромное спасибо за профессионализм, за доброе отношение и понимание наших возможностей и предпочтений. Желаем дальнейших успехов, побольше удачных сделок, процветания, здоровья!
+                  </div>
+                  <div class="slide__row" style="display: flex; justify-content: end;
+                     font-weight: 300;
+                     font-size: 1.6rem;
+                     line-height: 122%;
+                     color: #000000;">
+                     20.03.2022
+                  </div>
+                 </div>
+
+                 <div class="swiper-slide r-swiper-slide" style="background-color: #fff;">
+                  <div class="slide__row" style="display: flex;align-items: center;">
+                     <img src="./images/reviews/img1.svg" class="w-95" alt="">
+                     <span style="font-weight: 700;
+                        font-size: 2.5rem;
+                        line-height: 120%;
+                        color: #000000;
+                        margin-left: 5%;"> 
+                        Андрей Балконский
+                     </span>
+                  </div>
+                  <div class="slide__row" style="font-weight: 300;
+                     font-size: 1.9rem;
+                     line-height: 158%;
+                     color: #000000;
+                     margin-bottom: 7.4rem;">
+                     Выражаем огромную благодарность Олегу Кириллову за четкую работу, огромное спасибо за профессионализм, за доброе отношение и понимание наших возможностей и предпочтений. Желаем дальнейших успехов, побольше удачных сделок, процветания, здоровья!
+                  </div>
+                  <div class="slide__row" style="display: flex; justify-content: end;
+                     font-weight: 300;
+                     font-size: 1.6rem;
+                     line-height: 122%;
+                     color: #000000;">
+                     20.03.2022
+                  </div>
+                 </div>
+
+                 <div class="swiper-slide r-swiper-slide" style="background-color: #fff;">
+                  <div class="slide__row" style="display: flex;align-items: center;">
+                     <img src="./images/reviews/img1.svg" class="w-95" alt="">
+                     <span style="font-weight: 700;
+                        font-size: 2.5rem;
+                        line-height: 120%;
+                        color: #000000;
+                        margin-left: 5%;"> 
+                        Андрей Балконский
+                     </span>
+                  </div>
+                  <div class="slide__row" style="font-weight: 300;
+                     font-size: 1.9rem;
+                     line-height: 158%;
+                     color: #000000;
+                     margin-bottom: 7.4rem;">
+                     Выражаем огромную благодарность Олегу Кириллову за четкую работу, огромное спасибо за профессионализм, за доброе отношение и понимание наших возможностей и предпочтений. Желаем дальнейших успехов, побольше удачных сделок, процветания, здоровья!
+                  </div>
+                  <div class="slide__row" style="display: flex; justify-content: end;
+                     font-weight: 300;
+                     font-size: 1.6rem;
+                     line-height: 122%;
+                     color: #000000;">
+                     20.03.2022
+                  </div>
+                 </div>
+                 
+               </div>
+               
+             
+               
+               <div class="swiper-arrow-prev r-swiper-button-prev">
+                  <img src="./images/reviews/arrow-prev.svg"  alt="">
+               </div>
+               <div class="swiper-button-next r-swiper-button-next"></div>
+             
+              
+               <div class="swiper-scrollbar r-swiper-scrollbar" style="position: absolute;top: 120%;background-color: rgba(255,255,255,.6);left: 1%;
+               bottom: 3px;
+               z-index: 50;
+               height: 5px;
+               width: 98%;"></div>
+             </div>
+         </div>
+         <div class="review__row">
+            <div class="review__figure-svg">
+               <img src="./images/reviews/Vector-45.svg" class="w-100" alt="">
+            </div>
+         </div>
+           
+         
+      </section>
+      
+      <section class="feedback">
+         <div class="feedback__top">
+            <div class="feedback__top-figure">
+               <img src="./images/feedback/Vector-4.svg" class="w-100" alt="">
+            </div>
+         </div>
+         <div class="feeddback__container">
+            <div class="feedback__inner">
+
+               <div class="feedback__item">
+                  <div class="feedback__layout">
+               
+                     <form class="feedback__form">
+                        <div class="feedback__form-row">
+                           <div class="feedback__form-col">
+                              <label for="feedback-name" class="feedback__form-label">
+                                 <span>Имя</span>
+                              </label>
+                              <input type="text" id="feedback-name" name="feedback-name" class="feedback__form-input">
+                              <div class="feedback__form-col-figure">
+                                 <img src="./images/feedback/Rectangle-47.svg" class="w-100" alt="">
+                              </div>
+                           </div>
+                           
+                           <div class="feedback__form-col">
+                              <label for="feedback-phone" class="feedback__form-label">
+                                 <span>Номер</span>
+                              </label>
+                              <input type="text" id="feedback-phone" name="feedback-phone" class="feedback__form-input">
+                              <div class="feedback__form-col-figure">
+                                 <img src="./images/feedback/Rectangle-47.svg" class="w-100" alt="">
+                              </div>
+                           </div>
+                          
+                        </div>
+               
+                        <div class="feedback__form-row">
+                           <label for="feedback-question" class="feedback__form-label">
+                              <span>Итнересующий вопрос</span>
+                              <textarea wrap="on" cols="30" rows="5" name="feedback-question" id="feedback-question" class="feedback__form-textarea">
+                              </textarea>
+                              <div class="feedback__form-textarea-figure">
+                                 <img src="./images/feedback/Rectangle-48.svg" class="w-100" alt="">
+                              </div>
+                           </label>
+                        </div>
+                        <button class="feedback__form-btn">Оставить заявку на звонок</button>
+                     </form>
+               
+                  </div>
+                  <div class="feedback__item-vector" style="width:16% ;">
+                     <img src="./images/feedback/Group-122.svg" class="w-100" alt="">
+                  </div>
+               </div>
+               
+               <div class="feedback__item">
+                  <div class="feedback__image">
+                     <img src="./images/feedback/photo.png" class="w-100" alt="">
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+      <footer class="footer">
+         <div class="footer__bg">
+            <div class="footer__row window-width-425">
+               <div class="footer__col footer__col-contacts">
+                  <span class="span__title">Контактные данные</span>
+                  <p class="para__data">
+                     +48 884 349 867<br>
+                     +48 512 846 224<br>
+                     altraestateagency@gmail.com
+                  </p>
+                  <span class="span__title">al. Jana Pawła II 27, 00 - 867 Warszawa</span>
+                  <p class="para__data para__data-uppercase text-left">
+                     NIP 5272976864<br> 
+                     REGON 520401564 <br>
+                     KRS 0000931429
+                  </p>
+               </div>
+               <div class="footer__col footer__col-menu">
+                  <span class="span__menu">Блоки</span>
+                  <ul class="footer__list">
+                     <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">
+                           Главный экран
+                        </a>
+                     </li>
+                     <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">
+                           О нас
+                        </a>
+                     </li>
+                     <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">
+                           Услуги
+                        </a>
+                     </li>
+                     <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">
+                           Процесс
+                        </a>
+                     </li>
+                     <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">
+                           Отзывы
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="footer__col footer__col-social">
+                  <span class="span__menu">Мы в Соц. Сетях</span>
+                  <div class="social__row">
+                     <div class="social__row-figure">
+                        <img src="./images/footer/Rectangle-55.svg" alt="">
+                     </div>
+                     <div class="social__icons">
+                        <a href="#" class="social__link"><img src="./images/footer/insta.svg" alt=""></a>
+                        <a href="#" class="social__link"><img src="./images/footer/facebook.svg" alt=""></a>
+                        <a href="#" class="social__link"><img src="./images/footer/telegram.svg" alt=""></a>
+                        <a href="#" class="social__link"><img src="./images/footer/watsap.svg" alt=""></a>                        
+                     </div>
+                  </div>
+                  <p class="para__data para__data-uppercase viewport-425">
+                     NIP 5272976864<br> 
+                     REGON 520401564 <br>
+                     KRS 0000931429
+                  </p>
+               </div>
+            </div>
+            <div class="footer__row footer__row-col">
+               <div class="footer__col-info">
+                  <p class="footer__col-info-text">
+                     <span>“ALTRA REAL ESTATE AGENCY SP. Z O.O.”</span> Организация с ограниченной <br>
+                     отвественностью.<br>
+                     Уставной капитал 20 000 злотых.
+                  </p>
+               </div>
+               <div class="footer__col-btn">
+                  <div class="footer__button">
+                     
+                        Бесплатная консультация
+                     
+                  </div>
+               </div>
+            </div>
+            <div class="footer__line window-width-425"></div>
+            <div class="footer__row-last">
+               <div class="footer__col-info">
+                  <p class="footer__col-info-text">
+                     <span>©”@yourdesign_ishere” Все права защищены.</span>
+                  </p>
+               </div>
+              
+            </div>
+         </div>
+      </footer>
+      <div class="button__up">
+         <img src="./images/footer/arrow-up.svg" alt="">
+      </div>
+   </div>
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="./js/slider.js"></script>
+   
+   
 </body>
 </html>

@@ -73,11 +73,19 @@ const arrLang = {
  });
  
  //dropdown
- $(function () {
-   $(".dropdown").click(function () {
-     $("#myDropdown").toggleClass("show");
-   });
- });
+//  $(function () {
+//    $(".dropdown,.dropdown-mobile").click(function () {
+//      $("#myDropdown").toggleClass("show");
+//    });
+//  });
+const dropdown = document.querySelectorAll('[data-name="dropdown"]')
+
+dropdown.forEach(item => {
+  item.addEventListener('click', () => {
+    item.querySelector('[data-id="myDropdown"]').classList.toggle('show')
+  })
+})
+
  
  function showLngChanger() {
    // Close the dropdown menu if the user clicks outside of it
