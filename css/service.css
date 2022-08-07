@@ -148,10 +148,10 @@
 
 @media(max-width:767px){
    .service__item-title{
-      padding-top: 3rem;
+      padding-bottom: 1rem;
    }
-   .service__item-title,.service__item-text {
-      padding-left:3rem;
+   .service__item-text {
+      padding: 1rem 0;
    }
    .service__btn{
       margin-left: 3rem;

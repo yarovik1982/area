@@ -8,6 +8,7 @@
    background-position: center;
    background-size: cover;
    position: relative;
+   padding-top: 2rem;
 }
 .agency__bg-black{
    position: absolute;
@@ -68,6 +69,7 @@ font-weight: 700;
 font-size: 3rem;
 line-height: 122%;
 color: #FFFFFF;
+   margin: 2rem 0;
 }
 .agency__inner-text {
    font-family: 'Montserrat';
@@ -134,3 +136,8 @@ line-height: 200%;
 color: #FFFFFF;
 }
 
+@media(max-width:769px) {
+   .agency__bg-768 {
+      padding-top: 2rem;
+   }
+}

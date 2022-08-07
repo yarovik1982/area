@@ -14,7 +14,8 @@
    align-items: center;
 }
 .hero__images {
-   width: 64.8753%;
+   /*width: 64.8753%;*/
+   width: 55%;
    text-align: right;
    position: relative;
 }
@@ -53,7 +54,7 @@
    position: absolute;
    top: 0;
    left: 0;
-   right: 0;
+   right: 20%;
    bottom: 0;
    display: flex;
    align-items: center;
@@ -98,11 +99,11 @@
    font-size: 1.9rem;
    line-height: 158%;
    color: #000000;
-   padding-left: 13.92rem;
+   /* padding-left: 13.92rem; */
    margin: 3.3rem 0;
 }
 .hero__content-button {
-   text-align: center;
+   /* text-align: center; */
 }
 .hero__button {
    position: relative;
@@ -119,7 +120,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   
+
 }
 .hero__button-absolute span{
    font-family: 'Montserrat';
@@ -136,7 +137,7 @@
    width: 52%;
 }
 .hero__content-inner{
-   margin-bottom: 6rem;
+   margin: 6rem 10rem;
 }
 @media(max-width:769px){
    .hero__row{
@@ -154,18 +155,101 @@
       width: 120%;
    }
    .hero__bage-figure .min-figure{
-   width: 140%;
-}
+      width: 140%;
+   }
    .hero__bage-vector{
       display: none;
    }
    .hero__images{
       width: 94%;
    }
-   .hero__content-button{
-      margin-left: -11%;
-   }
+
    .hero__images-figure-vector{
       display: none;
    }
+   .estate__btn {
+      width: 100%;
+   }
 }
+
+.estate__btn {
+   width: 350px;
+   height: 55px;
+   margin: 20px 0 0 0;
+   cursor: pointer;
+   position: relative;
+}
+
+.btn-contact {
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 22px;
+   line-height: 26px;
+   display: flex;
+   align-items: center;
+   color: #ffffff;
+   clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+   background: linear-gradient(97.02deg, #d60813 9.52%, #771210 91.8%);
+   position: relative;
+   justify-content: center;
+   text-align: center;
+}
+.quizz__left-btn {
+   width: 170px;
+   height: 45px;
+   position: relative;
+}
+
+.button-wrapper__left {
+   position: relative;
+}
+
+.button-wrapper__left:before {
+   content: "";
+   width: 176px;
+   height: 41px;
+   opacity: 0;
+   /*z-index: -1;*/
+   background: #000;
+   position: absolute;
+   top: -5px;
+   left: 0px;
+   clip-path: polygon(0 0, 93% 0, 100% 100%, 0% 100%);
+   transition: opacity ease-in-out 0.5s;
+}
+
+.button-wrapper__left:hover:before {
+   opacity: 1 !important;
+}
+
+.button-wrapper__right {
+   position: relative;
+}
+
+.button-wrapper__right:before {
+   content: "";
+   width: 176px;
+   height: 41px;
+   opacity: 0;
+   background: #fff;
+   position: absolute;
+   top: -5px;
+   right: 0px;
+   transition: opacity ease-in-out 0.5s;
+   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 11% 100%);
+}
+
+.button-wrapper__right:hover:before {
+   opacity: 1;
+}
+
+.quizz__right-btn {
+   width: 170px;
+   height: 45px;
+   transform: rotate(180deg);
+}
+
+.hero__content-button a:hover {
+   color: #fff !important;
+}
+
